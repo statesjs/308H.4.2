@@ -66,6 +66,47 @@ for (let c of arr) {
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
+const favMovies = [
+  "Jaws",
+  "The Fellowship of the Ring",
+  "Howl's Moving Castle",
+  "Django Unchained",
+  "Cloud Atlas",
+  "The Usual Suspects",
+  "Toy Story",
+  "Conan the Barbarian",
+  "Titanic",
+  "Harry Potter",
+  "Fried Green Tomatoes",
+  "Volver",
+  "Oculus",
+  "Seven",
+  "Black Panther",
+  "Harry Potter",
+  "Imitation of Life",
+  "Snatch",
+  "Fast and Furious",
+];
+
+console.log(favMovies.indexOf("Titanic"));
+
+favMovies.sort(); //arrange logically
+console.log(favMovies);
+favMovies.pop(); // kick out the last element
+console.log(favMovies);
+favMovies.push("Guardians of the Galaxy"); //append to the end
+console.log(favMovies);
+favMovies.reverse(); //reverse the order
+console.log(favMovies);
+favMovies.shift(); //take off the first element
+console.log(favMovies);
+favMovies.unshift(); //adds element to the start of. also returns length of original obj
+console.log(favMovies.indexOf("Django Unchained"));
+favMovies.splice(14, 1, "Avatar"); // splice replaces , affecting the original array, splice(INDEX, REMOVE_COUNT, REPLACEMENT)
+console.log(favMovies);
+let sliced = favMovies.slice(favMovies.length / 2); // slice() does not affect original array, returns new array
+console.log(sliced);
+console.log(favMovies.indexOf("Fast and Furious")); // fast and furious was still in the array, but if it wasn't a return value of -1
 
 ////////////////////////////////
 // Where is Waldo
