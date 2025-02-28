@@ -52,9 +52,16 @@ console.log(dart);
 
 wolfy[0] = "Gameboy";
 console.log(wolfy);
+
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
+
+const arr = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for (let c of arr) {
+  const arrUpper = c.toUpperCase();
+  console.log(arrUpper);
+}
 
 ////////////////////////////////
 // Methods, Revisited
