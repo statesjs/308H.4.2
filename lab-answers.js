@@ -111,6 +111,18 @@ console.log(favMovies.indexOf("Fast and Furious")); // fast and furious was stil
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [
+  ["Timmy", "Frank"],
+  "Eggbert",
+  ["Lucinda", "Jacc", "Neff", "Snoop"],
+  ["Petunia", ["Baked Goods", "Waldo"]],
+];
+whereIsWaldo.splice(whereIsWaldo.indexOf("Eggbert"), 1);
+console.log(whereIsWaldo);
+console.log(whereIsWaldo[1][2]);
+whereIsWaldo[1][2] = "No One";
+console.log(whereIsWaldo[2][1][1]);
+//I found waldo through the nested arrays but, It was hard coded
 
 ////////////////////////////////
 // Excited Kitten
